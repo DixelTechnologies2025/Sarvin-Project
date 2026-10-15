@@ -1,0 +1,947 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Sarvin Enterprises</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/flatpickr.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Contact Boxes - Equal Size -->
+  <style>
+
+    /* Contact Details - Equal Width */
+    .contact-details .contact-box-column {
+      display: flex !important;
+    }
+
+    .contact-details .contact-box-column .contact-details-block {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .contact-details .contact-box-column .contact-details-block .inner-box {
+      width: 100% !important;
+      min-height: 320px !important;
+      height: 100% !important;
+
+      box-sizing: border-box !important;
+
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      text-align: center !important;
+    }
+
+    .contact-details .contact-box-column .inner-box .text {
+      max-width: 100% !important;
+      overflow-wrap: break-word !important;
+      word-break: normal !important;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+
+      .contact-details .contact-box-column {
+        display: flex !important;
+      }
+
+      .contact-details .contact-box-column .contact-details-block {
+        width: 100% !important;
+      }
+
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+
+      .contact-details .contact-box-column .contact-details-block .inner-box {
+        min-height: 280px !important;
+      }
+
+    }
+
+   /* Mandatory Field - Red Star */
+
+.req-star {
+    color: red;
+    font-weight: 700;
+}
+
+.type-feild {
+    position: relative;
+}
+
+.type-feild .req-star {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.type-feild:has(textarea) .req-star {
+    top: 22px;
+    transform: none;
+}
+
+  </style>
+
+  
+
+</head>
+
+
+<body>
+
+<div class="page-wrapper">
+
+
+  <!-- ==============================
+       PRELOADER
+  =============================== -->
+
+  <div class="preloader"></div>
+
+
+  <!-- ==============================
+       MAIN HEADER
+  =============================== -->
+
+  <header class="main-header header-style-one">
+
+    <div class="main-box">
+
+      <div class="logo-box">
+
+        <div class="logo">
+
+          <a href="index.html">
+
+            <img
+              src="images/logo.png"
+              alt="Sarvin Enterprises"
+              title="Sarvin Enterprises">
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Navigation -->
+
+      <div class="nav-outer">
+
+        <nav class="nav main-menu">
+
+          <ul class="navigation">
+
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li class="dropdown">
+
+              <a href="#">Services</a>
+
+              <ul>
+
+                <li>
+                  <a href="personal-loans.html">
+                    Personal Loans
+                  </a>
+                </li>
+
+                <li>
+                  <a href="business-loans.html">
+                    Business Loans
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home-loans.html">
+                    Home Loans
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mortgage-loans.html">
+                    Mortgage Loans
+                  </a>
+                </li>
+
+                <li>
+                  <a href="education-loans.html">
+                    Education Loans
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+
+      <!-- Right Box -->
+
+      <div class="outer-box">
+
+        <div class="info-box">
+
+          <div class="call-info">
+
+            <i class="fa-solid fa-phone ring__animation"></i>
+
+            <div>
+
+              <h6 class="title">
+                Phone:
+              </h6>
+
+              <a href="tel:+919640011853">
+                +91 9640011853
+              </a>
+
+            </div>
+
+          </div>
+
+          <a class="btn-two" href="contact.html">
+            Contact Now
+          </a>
+
+        </div>
+
+
+        <div class="mobile-nav-toggler d-block d-lg-none">
+
+          <i class="icon lnr-icon-bars"></i>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ==============================
+         MOBILE MENU
+    =============================== -->
+
+    <div class="auto-container">
+
+      <div class="mobile-menu">
+
+        <div class="menu-backdrop"></div>
+
+        <nav class="menu-box">
+
+          <div class="upper-box">
+
+            <div class="nav-logo">
+
+              <a href="index.html">
+
+                <img
+                  src="images/logo-light.png"
+                  alt="Sarvin Enterprises">
+
+              </a>
+
+            </div>
+
+            <div class="close-btn">
+
+              <i class="icon fa fa-times"></i>
+
+            </div>
+
+          </div>
+
+
+          <ul class="navigation clearfix d-block d-lg-none">
+          </ul>
+
+
+          <div class="content-box d-none d-lg-block">
+
+            <h4 class="title">
+              About Us
+            </h4>
+
+            <p class="text">
+              Consultez is the go-to hub for early adopters and innovation enthusiasts, offering cutting technology widely.
+            </p>
+
+          </div>
+
+
+          <!-- Mobile Contact -->
+
+          <ul class="contact-list-one">
+
+            <li>
+
+              <div class="contact-info-box">
+
+                <i class="icon lnr-icon-phone-handset"></i>
+
+                <span class="title">
+                  Call Now
+                </span>
+
+                <a href="tel:+919640011853">
+                  +91 9640011853
+                </a>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <div class="contact-info-box">
+
+                <span class="icon lnr-icon-envelope1"></span>
+
+                <span class="title">
+                  Send Email
+                </span>
+
+                <a href="mailto:sarvinenterprises9@gmail.com">
+                  sarvinenterprises9@gmail.com
+                </a>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <div class="contact-info-box">
+              <span class="icon lnr-icon-clock"></span>
+              <span class="title">Working Hours</span>
+              <span style="display:block; white-space:nowrap; font-size:15px;">Mon - Sat: 8:00&nbsp;AM - 6:30&nbsp;PM</span>
+</div>
+            </li>
+
+          </ul>
+
+
+          <!-- Social Links -->
+
+          <ul class="social-links">
+
+            <li>
+              <a href="#">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+
+      <!-- ==============================
+           SEARCH POPUP
+      =============================== -->
+
+      <div class="search-popup">
+
+        <span class="search-back-drop"></span>
+
+        <button class="close-search">
+
+          <span class="fa fa-times"></span>
+
+        </button>
+
+        <div class="search-inner">
+
+          <form method="post" action="#">
+
+            <div class="form-group">
+
+              <input
+                type="search"
+                name="search-field"
+                value=""
+                placeholder="Search..."
+                required>
+
+              <button type="submit">
+
+                <i class="fa fa-search"></i>
+
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==============================
+           STICKY HEADER
+      =============================== -->
+
+      <div class="sticky-header">
+
+        <div class="auto-container">
+
+          <div class="inner-container">
+
+            <div class="logo">
+
+              <a href="index.html">
+
+                <img
+                  src="images/logo.png"
+                  alt="Sarvin Enterprises">
+
+              </a>
+
+            </div>
+
+
+            <div class="nav-outer">
+
+              <nav class="main-menu">
+
+                <div class="navbar-collapse show collapse clearfix">
+
+                  <ul class="navigation clearfix">
+                  </ul>
+
+                </div>
+
+              </nav>
+
+
+              <div class="mobile-nav-toggler">
+
+                <span class="icon lnr-icon-bars"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==============================
+       PAGE TITLE
+  =============================== -->
+
+  <section
+    class="page-title"
+    style="background-image: url(images/bg/page-title-bg.jpg);">
+
+    <div class="auto-container">
+
+      <div class="title-outer">
+
+        <ul class="page-breadcrumb">
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            Contact Us
+          </li>
+
+        </ul>
+
+        <h1 class="title">
+          Contact Us
+        </h1>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==============================
+       CONTACT DETAILS
+  =============================== -->
+
+  <section class="contact-details pt-120 pb-120">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+
+        <!-- ADDRESS -->
+
+        <div
+          class="col-md-6 col-lg-4 wow fadeInLeft contact-box-column"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms">
+
+          <div class="contact-details-block">
+
+            <div class="inner-box">
+
+              <div class="icon">
+
+                <svg
+                  width="57"
+                  height="83"
+                  viewBox="0 0 57 83"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+
+                  <path
+                    d="M48.2832 67.1208C46.0627 66.0289 43.1956 65.1462 39.887 64.5246C40.8525 63.4943 41.8398 62.3925 42.8295 61.2228C46.7823 56.5509 49.9364 51.7779 52.2042 47.0358C55.0711 41.0411 56.5247 35.0761 56.5247 29.3066C56.5247 13.2934 43.8808 0.265625 28.3395 0.265625C12.7982 0.265625 0.154297 13.2934 0.154297 29.3066C0.154297 35.0761 1.60787 41.0411 4.47478 47.036C6.74259 51.778 9.89667 56.5511 13.8495 61.2229C14.8391 62.3927 15.8265 63.4944 16.792 64.5247C13.4834 65.1464 10.6163 66.0291 8.39581 67.121C4.17257 69.1976 3.28599 71.568 3.28599 73.1907C3.28599 75.2456 4.66534 78.1687 11.2359 80.4255C15.8278 82.0026 21.9018 82.8711 28.3395 82.8711C34.7772 82.8711 40.8512 82.0026 45.4431 80.4255C52.0137 78.1687 53.393 75.2456 53.393 73.1907C53.393 71.568 52.5064 69.1976 48.2832 67.1208ZM3.28599 29.3066C3.28599 15.0726 14.525 3.4924 28.3395 3.4924C42.154 3.4924 53.393 15.0726 53.393 29.3066C53.393 41.2854 46.3901 52.0915 40.5154 59.0475C35.4688 65.0228 30.361 69.2663 28.3395 70.8575C26.3175 69.2658 21.2097 65.0223 16.1637 59.0476C10.2889 52.0915 3.28599 41.2854 3.28599 29.3066ZM44.4527 77.3644C40.1718 78.8345 34.4494 79.6443 28.3395 79.6443C22.2296 79.6443 16.5072 78.8345 12.2263 77.3644C7.93889 75.8919 6.41768 74.1957 6.41768 73.1907C6.41768 71.5146 10.4984 68.6281 19.5449 67.3383C20.8847 68.6503 22.1322 69.7925 23.2223 70.7486C21.5613 71.3399 20.5103 72.2143 20.5103 73.1907C20.5103 74.9735 24.0162 76.4175 28.3395 76.4175C32.6628 76.4175 36.1687 74.9735 36.1687 73.1907C36.1687 72.2143 35.1177 71.3399 33.4567 70.7486C34.5468 69.7925 35.7943 68.6503 37.1341 67.3383C46.1806 68.6281 50.2613 71.5146 50.2613 73.1907C50.2613 74.1957 48.7401 75.8919 44.4527 77.3644Z"
+                    fill="#1A4137"/>
+
+                  <path
+                    d="M50.2655 29.3062C50.2655 16.8515 40.4314 6.71875 28.3437 6.71875C16.256 6.71875 6.42188 16.8515 6.42188 29.3062C6.42188 41.7609 16.256 51.8936 28.3437 51.8936C40.4314 51.8936 50.2655 41.7609 50.2655 29.3062ZM9.55357 29.3062C9.55357 18.6307 17.9828 9.94552 28.3437 9.94552C38.7046 9.94552 47.1338 18.6307 47.1338 29.3062C47.1338 39.9816 38.7046 48.6668 28.3437 48.6668C17.9828 48.6668 9.55357 39.9816 9.94552 29.3062Z"
+                    fill="#1A4137"/>
+
+                  <path
+                    d="M29.9061 40.6012C29.9061 41.4923 30.6071 42.2146 31.4719 42.2146H37.7353C38.6001 42.2146 39.3011 41.4923 39.3011 40.6012V32.5343H42.4328C43.083 32.5343 43.6655 32.1204 43.8964 31.4943C44.1274 30.8681 43.9589 30.16 43.473 29.715L29.3804 16.8079C28.7871 16.2645 27.8932 16.2645 27.2999 16.8079L13.2073 29.715C12.7214 30.16 12.5529 30.8681 12.7839 31.4943C13.0148 32.1204 13.5975 32.5343 14.2476 32.5343H17.3793V40.6012C17.3793 41.4923 18.0803 42.2146 18.9452 42.2146H25.2085C26.0734 42.2146 26.7744 41.4923 26.7744 40.6012V35.761H29.9061V40.6012ZM25.2085 32.5343C24.3437 32.5343 23.6427 33.2566 23.6427 34.1477V38.9878H20.511V30.9209C20.511 30.0298 19.81 29.3075 18.9452 29.3075H18.3661L28.3402 20.1723L38.3144 29.3075H37.7353C36.8705 29.3075 36.1695 30.0298 36.1695 30.9209V38.9878H33.0378V34.1477C33.0378 33.2566 32.3367 32.5343 31.4719 32.5343H25.2085Z"
+                    fill="#1A4137"/>
+
+                </svg>
+
+              </div>
+
+              <h4 class="title">
+                Address
+              </h4>
+
+              <p class="text">
+                Flat no S-5, Sri Nilayam Apartment,
+                Yellareddy Guda, Ameerpet,
+                Hyderabad - 500073
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- PHONE -->
+
+        <div
+          class="col-md-6 col-lg-4 wow fadeInLeft contact-box-column"
+          data-wow-delay="200ms"
+          data-wow-duration="1500ms">
+
+          <div class="contact-details-block">
+
+            <div class="inner-box">
+
+              <div class="icon">
+
+                <i
+                  class="fa-solid fa-phone"
+                  style="font-size:65px;color:#1A4137;">
+                </i>
+
+              </div>
+
+              <h4 class="title">
+                Phone
+              </h4>
+
+              <p class="text">
+                +91 9640011853
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div
+          class="col-md-6 col-lg-4 wow fadeInLeft contact-box-column"
+          data-wow-delay="400ms"
+          data-wow-duration="1500ms">
+
+          <div class="contact-details-block">
+
+            <div class="inner-box">
+
+              <div class="icon">
+
+                <i
+                  class="fa-solid fa-envelope"
+                  style="font-size:65px;color:#1A4137;">
+                </i>
+
+              </div>
+
+              <h4 class="title">
+                Mail Address
+              </h4>
+
+              <p class="text">
+                sarvinenterprises9@gmail.com
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==============================
+           GET IN TOUCH
+      =============================== -->
+
+      <div class="mt-100">
+
+        <div class="row g-5">
+
+
+          <!-- GOOGLE MAP -->
+
+          <div class="col-lg-6 content-column">
+
+            <div class="inner-column">
+
+              <div class="sec-title mb-30">
+
+                <h2
+                  class="title wow splt-txt"
+                  data-splitting>
+
+                  Get in touch
+
+                </h2>
+
+                <p
+                  class="text wow fadeInUp"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms">
+                </p>
+
+              </div>
+
+
+              <div class="google-map">
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15226.645071074068!2d78.43148785925185!3d17.428036185455312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90ceb276c9bd%3A0xe23140af8e8d6654!2sSri%20Nilaya%20Estate!5e0!3m2!1sen!2sin!4v1772268196578!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CONTACT FORM -->
+
+<div class="col-lg-6 content-column">
+
+  <div class="inner-column right-column">
+
+    <div class="sec-title mb-30">
+
+      <h2
+        class="title wow splt-txt"
+        data-splitting>
+
+        Fill Up The Form
+
+      </h2>
+
+      <p
+        class="text wow fadeInUp"
+        data-wow-delay="200ms"
+        data-wow-duration="1500ms">
+
+        Your email address will not be published.
+        Required fields are marked *
+
+      </p>
+
+    </div>
+
+
+    <form
+      id="contact_form"
+      method="post">
+
+      <div id="response_message"></div>
+
+
+      <!-- NAME -->
+
+      <div class="type-feild">
+
+        <i class="fa-light fa-user"></i>
+
+        <input
+          name="form_name"
+          id="form_name"
+          class="required"
+          type="text"
+          placeholder="Your Name">
+
+        <span class="req-star">*</span>
+
+      </div>
+
+
+      <!-- EMAIL -->
+
+      <div class="type-feild">
+
+        <i class="fa-light fa-envelope"></i>
+
+        <input
+          name="form_email"
+          id="form_email"
+          class="required"
+          type="email"
+          placeholder="Email Address">
+
+        <span class="req-star">*</span>
+
+      </div>
+
+
+      <!-- MESSAGE -->
+
+      <div class="type-feild">
+
+        <i class="fa-light fa-pen-to-square"></i>
+
+        <textarea
+          name="form_message"
+          id="form_message"
+          class="required"
+          placeholder="Enter Your Message here"></textarea>
+
+        <span class="req-star">*</span>
+
+      </div>
+
+
+      <!-- SUBMIT BUTTON -->
+
+      <button
+        type="submit"
+        class="btn-two">
+
+        <i class="fa-light fa-paper-plane"></i>
+
+        Get In Touch
+
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+  <!-- ==============================
+       SHARED FOOTER
+  =============================== -->
+
+  <div id="footer"></div>
+
+
+</div>
+<!-- End Page Wrapper -->
+
+
+<!-- ==============================
+     JAVASCRIPT FILES
+=============================== -->
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick-animation.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/mixitup.js"></script>
+<script src="js/flatpickr.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/SplitText.min.js"></script>
+<script src="js/splitType.js"></script>
+<script src="js/nice-select.min.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/vanilla-tilt.js"></script>
+<script src="js/splitting.js"></script>
+<script src="js/script-gsap.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Footer JavaScript -->
+<script src="js/footer.js"></script>
+
+<!-- Form Validation -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+
+
+<!-- ==============================
+     CONTACT FORM SUBMIT
+=============================== -->
+
+<script>
+
+$(document).ready(function () {
+
+    $("#contact_form").submit(function (e) {
+
+        e.preventDefault();
+
+        var formData = $(this).serialize();
+
+        $("#response_message").html("Sending message...");
+
+        $.ajax({
+
+            url: "sendmail.php",
+
+            type: "POST",
+
+            data: formData,
+
+            success: function (response) {
+
+                if (response == "success") {
+
+                    $("#response_message").html(
+                        '<div style="color:green;">Message sent successfully!</div>'
+                    );
+
+                    $("#contact_form")[0].reset();
+
+                }
+
+                else {
+
+                    $("#response_message").html(
+                        '<div style="color:red;">' +
+                        response +
+                        '</div>'
+                    );
+
+                }
+
+            },
+
+            error: function () {
+
+                $("#response_message").html(
+                    '<div style="color:red;">Server error. Please try again.</div>'
+                );
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
